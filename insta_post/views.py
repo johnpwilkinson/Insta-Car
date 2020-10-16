@@ -5,13 +5,14 @@ from insta_post.models import FavoriteCar, Comment
 from insta_post.forms import PostForm, CommentForm
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-from django.contrib.auth.decorators import login_required
+from django.views.generic import TemplateView
 
-
-@login_required(login_url='/login/')
-def index(request):
-    cars = FavoriteCar.objects.all()
-    return render(request, "index.html", {"cars": cars})
+class IndexView(TemplateView):
+  
+    def get(self,request):
+        cars = FavoriteCar.objects.all()
+        return render(request, "index.html", {"cars": cars})
+      
 
 def post_form_view(request):
     if request.method == "POST":
@@ -100,8 +101,8 @@ def del_post(request, post_id):
 
 
 def del_comment(request, pk):
-    comment = get_object_or_404(Comment, pk=pk)
-    if request.user.id == comment.commenter.id:
+    comment = Comment.objects.filter(pk=pk).first()
+    if request.user.id == comment.commenter.id or request.user.id == comment.post.poster.id:
         comment.delete()
         return redirect('post', comment.post.id)
     else: 
@@ -123,5 +124,19 @@ def edit_comment(request, pk):
         return render(request, 'generic_form.html', {'form': form})
     else: 
         return HttpResponseForbidden("You do not have permission to edit this comment")
-    
-    
+        
+
+class FollowView(TemplateView):
+    def get(self, request, follow_id):
+        signed_in_user = InstaUser.objects.filter(username=request.user.username).first()
+        follow = InstaUser.objects.filter(id=follow_id).first()
+        signed_in_user.following.add(follow)
+        return HttpResponseRedirect(request.META.get('HTTP_REFERER', '/'))
+
+
+class UnfollowView(TemplateView):
+    def get(self, request, unfollow_id):
+        signed_in_user = request.user
+        unfollow = InstaUser.objects.filter(id=unfollow_id).first()
+        signed_in_user.following.add(unfollow)
+        return HttpResponseRedirect(request.META.get('HTTP_REFERER', '/'))
