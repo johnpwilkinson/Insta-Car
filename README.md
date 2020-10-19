@@ -1,6 +1,7 @@
 # Welcome to InstaCar, our awesome Capstone project!
 
 By Jess, John, Ken and Lori.
+
 SE-OCT-2019
 
 This is our final project for Kenzie Academy, a group effort. We have created an Instagram-like photo-sharing service, geared specifically for car enthusiasts.
@@ -9,7 +10,7 @@ This is our final project for Kenzie Academy, a group effort. We have created an
 
 ## Overview
 
-From hot rods to Volkswagens to Teslas -- all cars are welcome at InstaCar! Create a profile and begin uploading photos of your favorite cars. Along with a photo, you can tell us more about the car -- year, make, model, and go ahead and put a caption on it!
+From hot rods to Volkswagens to Teslas -- all cars are welcome at InstaCar! Search through our database to find pictures of your favorie models. Create a profile and begin uploading photos of your own. Along with a photo, you can tell us more about the car -- year, make, model, and go ahead and put a caption on it!
 
 ## Features
 
@@ -31,7 +32,7 @@ The posts, as well as the individual comments, can be "liked" by users. Total li
 
 ## Work in progress
 
-We were on a deadline, so we were not able to implement every feature we wanted. We would still like to have a comprehensive search feature and a tagging/notification system, along with improved responsiveness and a few other minor tweaks that would improve user experience.
+We were on a deadline, so we were not able to implement every feature we wanted. We would still like to improve our search feature and add a tagging/notification system.
 
 ## Credits
 
@@ -53,7 +54,7 @@ Thank you to my family -- Mum and Dad, Justine and Chris, and Craig, Shalini, Il
 
 Lori:
 
-Thanks to my parents who supported me throughout my Kenzie career.  Special shoutouts to my Kenzie family who supported me and helped me grow, not only as an individual, but as a software developer.  I wouldn't be where I am if it wasn't for all of them.
+Thanks to my parents who supported me throughout my Kenzie career. Special shoutouts to my Kenzie family who supported me and helped me grow, not only as an individual, but as a software developer. I wouldn't be where I am if it wasn't for all of them.
 
 Ken:
 
