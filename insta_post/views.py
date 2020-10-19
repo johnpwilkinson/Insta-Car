@@ -8,7 +8,7 @@ from insta_post.models import FavoriteCar
 from insta_comment.models import Comment
 from insta_post.forms import PostForm
 from insta_comment.forms import CommentForm
-# from insta_comment.helpers import add_one
+from insta_comment.helpers import add_one
 
 
 class IndexView(TemplateView):
@@ -69,13 +69,9 @@ def photo_detail(request, post_id):
     return render(request, 'photo_detail.html', {'car': car, "comment_list": comment_list, "info": profile_info})
 
 
-# @login_required
 def up_vote(request, post_id):
-    vote = FavoriteCar.objects.get(id=post_id)
-    # call helper function here
-    vote.up_votes += 1
-    vote.save()
-    return redirect(request.META.get('HTTP_REFERER'))
+    add_one(post_id, FavoriteCar)
+    return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
 
 
 # @login_required
