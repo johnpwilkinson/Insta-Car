@@ -1,6 +1,7 @@
 # Welcome to InstaCar, our awesome Capstone project!
 
 By Jess, John, Ken and Lori.
+
 SE-OCT-2019
 
 This is our final project for Kenzie Academy, a group effort. We have created an Instagram-like photo-sharing service, geared specifically for car enthusiasts.
