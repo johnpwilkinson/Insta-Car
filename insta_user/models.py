@@ -7,7 +7,7 @@ class InstaUser(AbstractUser):
     profile_image = models.ImageField(upload_to='images/', null=True, blank=True)
     joined_date = models.DateField(auto_now_add=True)
     website = models.URLField(max_length=200, null=True, blank=True)
-    following = models.ManyToManyField("self", symmetrical=False)
+    following = models.ManyToManyField("self", symmetrical=False, related_name="followers")
 
 
 class UserEmail(models.Model):
