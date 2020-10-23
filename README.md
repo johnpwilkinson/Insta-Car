@@ -2,7 +2,7 @@
 
 This is our final project for Kenzie Academy, a group effort. We have created an Instagram-like photo-sharing service, geared specifically for car enthusiasts.
 
-# Files
+# About
 
 From hot rods to Volkswagens to Teslas -- showcase you garage, current collection, or dream car... and connect with like minded people to grow your network.
 
