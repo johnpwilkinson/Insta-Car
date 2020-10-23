@@ -6,7 +6,7 @@ This is our final project for Kenzie Academy, a group effort. We have created an
 
 From hot rods to Volkswagens to Teslas -- showcase you garage, current collection, or dream car... and connect with like minded people to grow your network.
 
-![InstaCar](https://github.com/johnpwilkinson/Insta-Car/blob/master/static/images/ic1.png?raw=true)
+![InstaCar1](https://github.com/johnpwilkinson/Insta-Car/blob/master/static/images/ic1.png?raw=true)
 
 # Features
 
@@ -18,7 +18,7 @@ You are a couple clicks away from sharing your passion for cars with other enthu
 
 # Get started quickly
 
-![Instacar2](https://photos.google.com/photo/AF1QipNO7_f3qU_m47fzA2oHkbWpEhqrnHM3GpcB2w5q)
+![Instacar2](https://github.com/johnpwilkinson/Insta-Car/blob/master/static/images/ic2.png?raw=true)
 
 ## obtain source code
 
@@ -28,7 +28,7 @@ cd into dir you want to clone to and git clone the link from the repo, then cd i
     git clone https://github.com/johnpwilkinson/Insta-Car.git
     cd Insta-Car
 
-![enter image description here](https://photos.google.com/photo/AF1QipNOBThJQBYoXnJ2YcciM7Mu07L7gh57RzApzvyJ)
+![instacar3](https://github.com/johnpwilkinson/Insta-Car/blob/master/static/images/ic3.png?raw=true)
 
 ## Spin up the app
 
