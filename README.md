@@ -6,7 +6,7 @@ This is our final project for Kenzie Academy, a group effort. We have created an
 
 From hot rods to Volkswagens to Teslas -- showcase you garage, current collection, or dream car... and connect with like minded people to grow your network.
 
-![InstaCar]()
+![InstaCar](https://github.com/johnpwilkinson/Insta-Car/blob/master/static/images/ic1.png?raw=true)
 
 # Features
 
